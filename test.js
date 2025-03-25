@@ -9,3 +9,13 @@ function maxNumber(num){
         return maxNumber
     })
 }
+
+function minNumber(num){
+    minNumber = num[0]
+    num.forEach((index)=>{
+        if(index<minNumber){
+            minNumber=index
+        }
+        return minNumber
+    })
+}
