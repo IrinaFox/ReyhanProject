@@ -4,12 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcbb91a3-5c12-41d9-95a6-57ccc9817eef" name="Changes" comment="test-2:added test&#10;utils.js:function maxNumber,function minNumber" />
+    <list default="true" id="fcbb91a3-5c12-41d9-95a6-57ccc9817eef" name="Changes" comment="test-2:added test&#10;utils.js:function maxNumber,function minNumber">
+      <change afterPath="$PROJECT_DIR$/test2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <list id="7f075e83-7062-4be4-8873-163ae4fe5cb0" name="utils.js" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -42,6 +52,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Node.js.test.js.executor": "Run",
+    "Node.js.test2.js.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "#2 on utils.js",
@@ -54,12 +65,16 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.test2.js">
+    <configuration name="test2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test2.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.test2.js" />
         <item itemvalue="Node.js.test.js" />
       </list>
     </recent_temporary>
@@ -84,6 +99,7 @@
       <workItem from="1743585938718" duration="921000" />
       <workItem from="1743586903815" duration="3191000" />
       <workItem from="1743669907242" duration="1264000" />
+      <workItem from="1743757073312" duration="5355000" />
     </task>
     <task id="LOCAL-00001" summary="test-2:added test&#10;utils.js:function maxNumber">
       <option name="closed" value="true" />
@@ -117,7 +133,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743675327435</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="test-2:added test&#10;utils.js:function maxNumber,function minNumber">
+      <option name="closed" value="true" />
+      <created>1743757374475</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743757374475</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
