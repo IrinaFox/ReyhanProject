@@ -1,25 +1,28 @@
-console.log("hi")
-console.log("test")
+console.log("hi");
+console.log("test");
 
 function getMaxNumber(nums) {
     let maxNumber = nums[0];
+
     nums.forEach((value)=>{
 
         if (value > maxNumber) {
             maxNumber = value;
         }
     })
+
     return maxNumber;
 }
 
-function getMinNumber(nums){
+function getMinNumber(nums) {
     let minNumber = nums[0];
-    nums.forEach((value)=>{
-        if(value < minNumber){
+
+    nums.forEach((value) => {
+        if (value < minNumber) {
             minNumber = value;
         }
-    })
-    return minNumber
+    });
+    return minNumber;
 }
 
 function getSumNum(num) {
