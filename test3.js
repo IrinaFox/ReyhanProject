@@ -1,8 +1,11 @@
 function filterPozitives(arr){
-    return arr.filter(function(num) {
-
-            return num > 0;
+    const result = [];
+    arr.forEach((number) => {
+        if(number > 0) {
+            result.push(number);
+        }
     })
+    return result;
 }
 
 function cleanEdges(arr) {
