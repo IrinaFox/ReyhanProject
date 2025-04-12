@@ -21,15 +21,29 @@ function cleanEdges(arr) {
 }
 
 function getStringify(arr) {
-    return arr.map(function(item) {
-        if(typeof item === 'number') {
-            return String(item);
-        }
-        return item;
+    const newArr = [];
+    arr.forEach((num) => {
+        newArr.push(num + "");
     })
+    return newArr;
 }
+
+function removeNegativeEdges(arr) {
+    arr.forEach((num) => {
+        if (arr[0] < 0) {
+            arr.shift();
+        }
+        if(arr[arr.length-1] < 0) {
+            arr.pop()
+        }
+    })
+    return arr;
+}
+
+
 //test
 const numbers = [1,2,-3,4,5,-6,7,8,9,10];
+const numbers1 = [-2,2,4,-5,]
 const num = ["1",'4','5']
 const pozitivesNumbers = filterPozitives(numbers);
 
@@ -42,3 +56,6 @@ console.log(result);
 
 let result2 = getStringify(names);
 console.log(result2);
+
+let result3 = removeNegativeEdges(numbers1);
+console.log(result3);
