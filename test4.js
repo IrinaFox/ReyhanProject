@@ -10,7 +10,29 @@ function toUpperCaseArray(arr) {
 
 }
 
+function addIndex(arr){
+    let arr1 = arr.map((num) => num + num)
+    return arr1;
+}
+
+function extractNames(people) {
+    let arr = people.map(person => person.name);
+    return arr
+}
+
+
 //test
 console.log(doubleNumbers([1,2,3]));
-animals = ['rizik','banan'];
+
+let animals = ['rizik','banan'];
+let people = [
+    { name: 'rizik',age: 2},
+    { name: 'banan', age: 4}
+];
+
 console.log(toUpperCaseArray(animals));
+
+console.log(addIndex([1,2,3]));
+
+const names = extractNames(people);
+console.log(names);
