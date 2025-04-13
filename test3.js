@@ -39,6 +39,14 @@ function removeNegativeEdges(arr) {
     })
     return arr;
 }
+ function collectEvens(arr) {
+    const newArr = [];
+    arr.forEach((num) => {
+        if (num % 2 === 0)
+            newArr.push(num);
+    })
+     return newArr;
+ }
 
 
 //test
@@ -59,3 +67,6 @@ console.log(result2);
 
 let result3 = removeNegativeEdges(numbers1);
 console.log(result3);
+
+let result4 = collectEvens(numbers);
+console.log(result4);
