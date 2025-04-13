@@ -9,11 +9,11 @@ function filterPozitives(arr){
 }
 
 function cleanEdges(arr) {
-    if(typeof arr[0] === 'string'){
+    if (typeof arr[0] === 'string') {
         arr.shift();
     }
 
-    if(typeof arr[arr.length-1] === 'string'){
+    if (typeof arr[arr.length-1] === 'string') {
         arr.pop();
     }
 
@@ -22,6 +22,7 @@ function cleanEdges(arr) {
 
 function getStringify(arr) {
     const newArr = [];
+
     arr.forEach((num) => {
         newArr.push(num + "");
     })
@@ -29,30 +30,33 @@ function getStringify(arr) {
 }
 
 function removeNegativeEdges(arr) {
-    arr.forEach((num) => {
         if (arr[0] < 0) {
             arr.shift();
         }
-        if(arr[arr.length-1] < 0) {
-            arr.pop()
+
+        if (arr[arr.length-1] < 0) {
+            arr.pop();
         }
-    })
+
     return arr;
 }
  function collectEvens(arr) {
     const newArr = [];
+
     arr.forEach((num) => {
-        if (num % 2 === 0)
+        if (num % 2 === 0) {
             newArr.push(num);
-    })
+        }
+      })
+
      return newArr;
  }
 
 
 //test
 const numbers = [1,2,-3,4,5,-6,7,8,9,10];
-const numbers1 = [-2,2,4,-5,]
-const num = ["1",'4','5']
+const numbers1 = [-2,2,4,-5,];
+const num = ["1",'4','5'];
 const pozitivesNumbers = filterPozitives(numbers);
 
 console.log(pozitivesNumbers);
