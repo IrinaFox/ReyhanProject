@@ -5,9 +5,9 @@ function doubleNumbers(arr) {
 }
 
 function toUpperCaseArray(arr) {
-    arr = arr.map((num) => num.toUpperCase());
+    const result = arr.map((num) => num.toUpperCase());
 
-    return arr;
+    return result;
 }
 
 function addIndex(arr){
@@ -23,13 +23,7 @@ function extractNames(people) {
 }
 
 function booleanToText(arr) {
-    return arr.map(function(value) {
-        if (value === true) {
-            return "Yes";
-        } else {
-            return "No";
-        }
-    });
+    return arr.map((value) => value === true ? "Yes" : "No");
 }
 
 //test
