@@ -7,6 +7,8 @@
     <list default="true" id="fcbb91a3-5c12-41d9-95a6-57ccc9817eef" name="Changes" comment="&#10;test2.js: function countNumbers, function sayHi, function getFullName">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test4.js" beforeDir="false" afterPath="$PROJECT_DIR$/test4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="7f075e83-7062-4be4-8873-163ae4fe5cb0" name="utils.js" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +70,8 @@
   }
 }]]></component>
   <component name="RunManager" selected="Node.js.test4.js">
+
+  <component name="RunManager" selected="Node.js.test3.js">
     <configuration name="test2.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test2.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
@@ -86,7 +90,6 @@
         <item itemvalue="Node.js.test3.js" />
         <item itemvalue="Node.js.test2.js" />
         <item itemvalue="Node.js.test.js" />
-        <item itemvalue="Node.js.test3.js" />
       </list>
     </recent_temporary>
   </component>
