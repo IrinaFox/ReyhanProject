@@ -13,17 +13,30 @@ function  sortStringsAlphabetically(arr) {
 function sortByLength(arr) {
     return arr.sort((a, b) => a.length - b.length);
 }
+
+function sortObjectsByAge(arr) {
+    return arr.sort((a, b)=> a.age - b.age);
+}
+
+
 // test
 
 const numbers = [3, 1, 6, 8, 9, 10];
 const fruits = ["banana", 'apple', 'lemon'];
+const students = [
+    {name: "Reyhan", age:30},
+    {name: "Ira", age:29},
+    {name: 'Tarlan', age:35}
+]
 
 const sortedAsc = sortNumbersAsc(numbers);
 const sortedDesc = sortNumbersDesc(numbers);
 const sortedStrings = sortStringsAlphabetically(fruits);
 const sortLength = sortByLength(fruits);
+const sortedStudent = sortObjectsByAge(students)
 
 console.log(sortedAsc);
 console.log(sortedDesc);
 console.log(sortedStrings);
 console.log(sortLength);
+console.log(sortedStudent)
