@@ -22,11 +22,11 @@ function hasAdminUser(arr) {
     return arr.some(user => user.role === "admin");
 }
 
-function allPositive(arr) {
+function hasAllPositive(arr) {
     return arr.every(num => num > 0)
 }
 
-function allStrings(arr) {
+function hasAllStrings(arr) {
     return arr.every(word => typeof word === "string");
 }
 
@@ -34,8 +34,8 @@ function containsApple(arr) {
     return arr.includes('apple');
 }
 
-function checkUsernameTaken(arr) {
-    return arr.includes(user => user.name === 'Ira')
+function checkUsernameTaken(arr, name) {
+    return arr.includes(name)
 }
 
 
@@ -54,10 +54,10 @@ const negIndex = findNegativeIndex(numbers);
 const findZ = findIndexOfWord(fruits);
 const result = hasNumberGreaterThanTen(numbers);
 const result2 = hasAdminUser(users);
-const result3 = allPositive(numbers);
-const result4 = allStrings(fruits);
+const result3 = hasAllPositive(numbers);
+const result4 = hasAllStrings(fruits);
 const result5 = containsApple(fruits);
-const result6 = checkUsernameTaken(users);
+const result6 = checkUsernameTaken(users, "Ira");
 
 console.log(evenNum);
 console.log(longWord);
