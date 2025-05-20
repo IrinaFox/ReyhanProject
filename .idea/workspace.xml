@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcbb91a3-5c12-41d9-95a6-57ccc9817eef" name="Changes" comment="DP-31: Created classes: Library and methods addBook, listBooks">
+    <list default="true" id="fcbb91a3-5c12-41d9-95a6-57ccc9817eef" name="Changes" comment="&#10;test2.js: function countNumbers, function sayHi, function getFullName">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test4.js" beforeDir="false" afterPath="$PROJECT_DIR$/test4.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="7f075e83-7062-4be4-8873-163ae4fe5cb0" name="utils.js" comment="" />
@@ -83,12 +86,16 @@
     <configuration name="test3.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test3.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
+    <configuration name="test4.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test4.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
     <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.test31.js" />
+        <item itemvalue="Node.js.test4.js" />
         <item itemvalue="Node.js.test3.js" />
         <item itemvalue="Node.js.test2.js" />
         <item itemvalue="Node.js.test.js" />
