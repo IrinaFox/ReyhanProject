@@ -1,15 +1,25 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+
+const firstName = ref('')
+const lastName = ref('')
+const age = ref('')
+const phone = ref('')
+const gender = ref('')
+const submitted = ref(false)
+
+function submitForm() {
+  submitted.value = true
+}
 </script>
 
 <template>
   <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
+      <HelloWorld msg="Welcome!" />
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -17,10 +27,55 @@ import HelloWorld from './components/HelloWorld.vue'
     </div>
   </header>
 
+  <div class="form-container">
+    <h1>Форма пользователя</h1>
+
+    <div>
+      <label>Имя:</label>
+      <input type="text" v-model="firstName" placeholder="Введите имя" />
+    </div>
+
+    <div>
+      <label>Фамилия:</label>
+      <input type="text" v-model="lastName" placeholder="Введите фамилию" />
+    </div>
+
+    <div>
+      <label>Возраст:</label>
+      <input type="number" v-model="age" placeholder="Введите возраст" />
+    </div>
+
+    <div>
+      <label>Телефон:</label>
+      <input type="tel" v-model="phone" placeholder="Введите номер телефона" />
+    </div>
+
+    <div>
+      <label>Пол:</label>
+      <select v-model="gender">
+        <option disabled value="">Выберите пол</option>
+        <option>Мужской</option>
+        <option>Женский</option>
+      </select>
+    </div>
+
+    <button @click="submitForm">Отправить</button>
+
+    <div v-if="submitted">
+      <h2>Введённые данные:</h2>
+      <p>Имя: {{ firstName }}</p>
+      <p>Фамилия: {{ lastName }}</p>
+      <p>Возраст: {{ age }}</p>
+      <p>Телефон: {{ phone }}</p>
+      <p>Пол: {{ gender }}</p>
+    </div>
+  </div>
+
   <RouterView />
 </template>
 
 <style scoped>
+/* СТИЛИ ДЛЯ HEADER */
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -77,9 +132,29 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 1rem;
   }
 }
+
+/* СТИЛИ ДЛЯ ФОРМЫ */
+.form-container {
+  max-width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0 16px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
 </style>
+
