@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fcbb91a3-5c12-41d9-95a6-57ccc9817eef" name="Changes" comment="&#10;test2.js: function countNumbers, function sayHi, function getFullName">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test4.js" beforeDir="false" afterPath="$PROJECT_DIR$/test4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test3.js" afterDir="false" />
+    <list default="true" id="fcbb91a3-5c12-41d9-95a6-57ccc9817eef" name="Changes" comment="my-vue:created a form for users">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <list id="7f075e83-7062-4be4-8873-163ae4fe5cb0" name="utils.js" comment="" />
@@ -63,16 +60,25 @@
     &quot;Node.js.zoo.class17.js.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#15 on DP-31&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\user\\IdeaProjects\\myProjekt\\ReyhanProject\\my-vue\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\myProjekt\ReyhanProject" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\IdeaProjects\myProjekt\ReyhanProject" />
+    </key>
+  </component>
   <component name="RunManager" selected="Node.js.test31.js">
     <configuration name="test-26.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test-26.js" working-dir="$PROJECT_DIR$">
       <method v="2" />
@@ -146,6 +152,8 @@
       <workItem from="1747133004016" duration="1429000" />
       <workItem from="1747645476595" duration="602000" />
       <workItem from="1747733208672" duration="631000" />
+      <workItem from="1748033286261" duration="1434000" />
+      <workItem from="1748247252411" duration="3026000" />
     </task>
     <task id="LOCAL-00001" summary="test-2:added test&#10;utils.js:function maxNumber">
       <option name="closed" value="true" />
@@ -267,7 +275,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746656687910</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="my-vue:created a form for users">
+      <option name="closed" value="true" />
+      <created>1748249933580</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1748249933580</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +292,11 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
-        <entry key="MAIN" />
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
@@ -294,6 +314,7 @@
     <MESSAGE value="DP-28: Created 10 functions: function findEvenNumber, function findLongWord, function findNegativeIndex, function findIndexOfWord, function hasNumberGreaterThanTen, function hasAdminUser, function allPositive, function allStrings, function containsApple, function checkUsernameTaken" />
     <MESSAGE value="DP-30: Created two zoos: cityZoo and jungleZoo, and applied all the methods to it." />
     <MESSAGE value="DP-31: Created classes: Library and methods addBook, listBooks" />
-    <option name="LAST_COMMIT_MESSAGE" value="DP-31: Created classes: Library and methods addBook, listBooks" />
+    <MESSAGE value="my-vue:created a form for users" />
+    <option name="LAST_COMMIT_MESSAGE" value="my-vue:created a form for users" />
   </component>
 </project>

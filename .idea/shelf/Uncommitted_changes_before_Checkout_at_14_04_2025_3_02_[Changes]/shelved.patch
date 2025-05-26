@@ -1,0 +1,27 @@
+Index: test4.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>function doubleNumbers(arr) {\r\n    let doubles = arr.map((num) => num * 2);\r\n    return doubles;\r\n}\r\n\r\n\r\n\r\n\r\n//test\r\nconsole.log(doubleNumbers([1,2,3]));
+===================================================================
+diff --git a/test4.js b/test4.js
+--- a/test4.js	(revision a291e67c12412f0187f49cf1950da2ea44b36a20)
++++ b/test4.js	(date 1744584632851)
+@@ -3,8 +3,16 @@
+     return doubles;
+ }
+ 
++function toUpperCaseArray(arr) {
++    arr = arr.map((name) => name.toUpperCase());
++    return arr;
++
++}
+ 
+ 
+ 
+ //test
+-console.log(doubleNumbers([1,2,3]));
+\ No newline at end of file
++console.log(doubleNumbers([1,2,3]));
++animals = [ 'rizik','banan' ];
++
++console.log(toUpperCaseArray(animals));
