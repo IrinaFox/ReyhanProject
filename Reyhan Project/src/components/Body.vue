@@ -1,13 +1,10 @@
 <script setup>
-import Body from "@/components/Body.vue";
+import MainForm from "@/components/MainForm.vue";
 </script>
 
 <template>
-<button>Merry Cristmas</button>
+<MainForm></MainForm>
 </template>
 
 <style scoped>
-button {
-  background-color: #3b82f6;
-}
 </style>
