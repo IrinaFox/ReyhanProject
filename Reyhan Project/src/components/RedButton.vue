@@ -1,10 +1,10 @@
-<script setup>
-
-</script>
-
 <template>
   <button class="red-btn">Cancel</button>
 </template>
+
+<script setup>
+
+</script>
 
 <style scoped>
 .red-btn {
