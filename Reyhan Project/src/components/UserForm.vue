@@ -113,7 +113,7 @@
 
           if (!this.formData.phone.trim()) {
             errors.phone = "Номер телефона обязателен для заполнения";
-          } else if (!/^\+?[\d\s\-\(\)]{10,}$/.test(this.formData.phone.trim())) {
+          } else if (!/^\+?[\d\s\-]{10,}$/.test(this.formData.phone.trim())) {
             errors.phone = "Введите корректный номер телефона";
           }
 
@@ -271,5 +271,12 @@
   </style>
 
 <style scoped>
+.btn-secondary {
+  background-color: black;
+  width: 50%;
+  height: auto;
+  border-radius: 14px;
+  color: white;
+}
 
 </style>
