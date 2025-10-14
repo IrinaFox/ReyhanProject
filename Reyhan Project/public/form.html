@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма пользователя</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            display: flex;
+            gap: 20px;
+        }
+        .radio-option {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .submit-btn {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e8f5e8;
+            border: 1px solid #4CAF50;
+            border-radius: 5px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="form-container">
+    <h2>Форма регистрации</h2>
+    <form id="userForm">
+        <div class="form-group">
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Фамилия:</label>
+            <input type="text" id="lastName" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Возраст:</label>
+            <input type="number" id="age" min="1" max="120" required>
+        </div>
+        <div class="form-group">
+            <label>Пол:</label>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input type="radio" id="male" name="gender" value="Мужской" required>
+                    <label for="male">Мужской</label>
+                </div>
+                <div class="radio-option">
+                    <input type="radio" id="female" name="gender" value="Женский" required>
+                    <label for="female">Женский</label>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="submit-btn">Отправить</button>
+    </form>
+    <div id="result" class="result">
+        <h3>Введенные данные:</h3>
+        <p id="resultText"></p>
+    </div>
+</div>
+
+<script>
+    document.getElementById('userForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const firstName = document.getElementById('firstName').value;
+        const lastName = document.getElementById('lastName').value;
+        const age = document.getElementById('age').value;
+        const gender = document.querySelector('input[name="gender"]:checked').value;
+
+        document.getElementById('resultText').innerHTML = `
+                <strong>Имя:</strong> ${firstName}<br>
+                <strong>Фамилия:</strong> ${lastName}<br>
+                <strong>Возраст:</strong> ${age} лет<br>
+                <strong>Пол:</strong> ${gender}
+            `;
+        document.getElementById('result').style.display = 'block';
+    });
+</script>
+</body>
+</html>
