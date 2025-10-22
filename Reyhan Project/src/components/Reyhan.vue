@@ -11,6 +11,28 @@
     <input type="radio" name="answer" value="yes"> Да
     <input type="radio" name="answer" value="no"> Нет
     <input type="button" class="blue-btn" onclick="alert('Ваш ответ принят!')" value="Отправить">
+    <input type="text" placeholder="Привет">
+    <input type="email" placeholder="введите почту">
+    <input type="password" placeholder="Пароль">
+    <input type="tel" placeholder="+994...">
+    <input type="url" placeholder="https://example.com">
+    <input type="search" placeholder="Поиск...">
+    <input type="number" min="18" max="100" step="1" placeholder="age">
+    <input type="range" min="0" max="100" value="50">
+    <input type="date">
+    <input type="time">
+    <input type="datetime-local">
+    <input type="month">
+    <input type="week">
+    <input type="color" value="#ff0000">
+    <input type="file">
+    <input type="file" multiple>
+    <input type="file" accept="image/*">
+    <input type="checkbox" id="check1">
+    <label for="check1">Согласен</label>
+    <input type="reset" value="Очистить">
+    <input type="image" src="button.png" alt="Submit">
+    <input type="hidden" name="userId" value="123">
   </div>
 </template>
 
