@@ -12,6 +12,12 @@ import Button from "@/components/Button.vue";
   <Button></Button>
   <GreenButton></GreenButton>
   <RedButton></RedButton>
+  <div>
+    <h1>Приветствие</h1>
+
+    <Reyhan text="Добый день УВАЖАЕМЫЕ!" />
+    <Reyhan text="Приветствуем ВАС!" />
+  </div>
 </template>
 
 <style scoped>

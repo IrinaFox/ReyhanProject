@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 
 <template>
   <!-- Здесь пишется весь HTML код -->
@@ -34,8 +31,23 @@
     <input type="image" src="button.png" alt="Submit">
     <input type="hidden" name="userId" value="123">
   </div>
+  <div>
+      <h2>Добро пожаловать</h2>
+      <div>{{ text }}</div>
+  </div>
 </template>
 
+<script>
+export default {
+  name: "Reyhan",
+  props: {
+    text: {
+      type: String,
+      required: true
+    }
+  }
+}
+</script>
 <style scoped>
 .blue-btn {
   background-color: #007bff; /* Синий цвет */
