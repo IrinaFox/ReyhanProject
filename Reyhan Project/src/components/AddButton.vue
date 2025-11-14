@@ -6,9 +6,12 @@
   >
     ➕ Добавить
   </button>
+  <div>{{store.name}}</div>
 </template>
 
 <script>
+import { useMainStore } from '@/store/store';
+
 export default {
   name: 'AddButton',
   props: {
@@ -16,6 +19,16 @@ export default {
       type: Boolean,
       default: false
     }
+  },
+
+  setup() {
+    const store = useMainStore();
+
+    const changeName = () => {
+      store.setName('Новое имя')
+    }
+
+    return { store, changeName }
   }
 }
 </script>

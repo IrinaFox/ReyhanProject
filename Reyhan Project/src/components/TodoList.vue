@@ -28,6 +28,10 @@ export default {
     }
   }
 }
+const todos = [
+  { id: 1, text: 'Купить молоко', completed: false },
+  { id: 2, text: 'Сделать зарядку', completed: true }
+]
 </script>
 
 <style scoped>

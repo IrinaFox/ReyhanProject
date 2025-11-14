@@ -7,7 +7,7 @@ import Button from "@/components/Button.vue";
 </script>
 
 <template>
-  <Reyhan></Reyhan>
+  <Reyhan text="hah" my-cat="dudu" my-dog="FUFU"></Reyhan>
   <UserForm></UserForm>
   <Button></Button>
   <GreenButton></GreenButton>
@@ -15,8 +15,8 @@ import Button from "@/components/Button.vue";
   <div>
     <h1>Приветствие</h1>
 
-    <Reyhan text="Добый день УВАЖАЕМЫЕ!" />
-    <Reyhan text="Приветствуем ВАС!" />
+    <Reyhan text="Добый день УВАЖАЕМЫЕ!"  my-cat="Ya" my-dog="HoHO"/>
+    <Reyhan text="Приветствуем ВАС!" my-cat="kuku" my-dog="Vu" />
   </div>
 </template>
 
