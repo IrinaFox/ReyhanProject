@@ -1,6 +1,6 @@
 <template>
   <div class="todo-app">
-    <h1>📝 Мой список задач</h1>
+    <h1>📝 Мой список задач {{myCat}} {{store.name}} {{store.age}} {{myName}} {{store.color}} {{myDog}}</h1>
 
     <!-- Форма добавления -->
     <div class="input-area">
@@ -40,15 +40,30 @@
 </template>
 
 <script>
+import { useMainStore } from '@/store/store';
+
 export default {
   name: 'ToDo',
   data() {
     return {
       todos: [],
       newTodoText: '',
-      newTodo: '' // добавлено для совместимости
+      newTodo: '',
+      myCat:"Bob"// добавлено для совместимости
     }
   },
+  setup() {
+    const store = useMainStore();
+    const myName="Ira";
+    const myDog2="Barsik";
+
+    const changeName = () => {
+      store.setName('Новое имя')
+    }
+
+    return { store, changeName,myName:myName,myDog:myDog2}
+  },
+
   mounted() {
     this.loadTodos()
   },

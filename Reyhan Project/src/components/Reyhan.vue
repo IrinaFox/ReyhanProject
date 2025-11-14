@@ -2,7 +2,9 @@
 <template>
   <!-- Здесь пишется весь HTML код -->
   <div class="container">
+    <div>{{myCat}} {{myDog}}</div>
     <h1>Здравствуй Дедушка Мороз</h1>
+    <AddButton></AddButton>
     <p>Здравствуй Дедушка Мороз,борода из ваты.
     Ты подарки нам принес?</p>
     <input type="radio" name="answer" value="yes"> Да
@@ -38,12 +40,23 @@
 </template>
 
 <script>
+import AddButton from "@/components/AddButton.vue";
+
 export default {
   name: "Reyhan",
+  components: {AddButton},
   props: {
     text: {
       type: String,
       required: true
+    },
+    myCat: {
+      type: String,
+      required: true
+    },
+    myDog: {
+      type: String,
+      required: false
     }
   }
 }
