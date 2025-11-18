@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import { useMainStore } from '@/store/store';
+import { useMainStore } from '@/store/store.js';
 
 export default {
   name: 'AddButton',

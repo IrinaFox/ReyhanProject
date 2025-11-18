@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import DeleteButton from './DeleteButton.vue'
+import DeleteButton from './buttons/DeleteButton.vue'
 
 export default {
   name: 'TodoItem',

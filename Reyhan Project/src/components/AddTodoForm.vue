@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import AddButton from './AddButton.vue'
+import AddButton from './buttons/AddButton.vue'
 
 export default {
   name: 'AddTodoForm',
