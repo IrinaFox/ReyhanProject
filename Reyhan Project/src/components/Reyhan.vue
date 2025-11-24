@@ -1,8 +1,6 @@
 
 <template>
-  <!-- Здесь пишется весь HTML код -->
-  <div class="container">
-    <h1>Здравствуй Дедушка Мороз</h1>
+  <div>
     <input type="radio" name="answer" value="yes"> Да
     <input type="radio" name="answer" value="no"> Нет
 
@@ -56,12 +54,11 @@
 </template>
 
 <script>
-import AddButton from './buttons/AddButton.vue';
 import MyCustomButton from './buttons/MyCustomButton.vue';
 
 export default {
   name: "Reyhan",
-  components: {AddButton, MyCustomButton},
+  components: {MyCustomButton},
   props: {
     text: {
       type: String,

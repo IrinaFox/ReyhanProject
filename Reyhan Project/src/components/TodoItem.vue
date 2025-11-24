@@ -12,12 +12,12 @@
 </template>
 
 <script>
-import DeleteButton from './buttons/DeleteButton.vue'
+import MyCustomButton from './buttons/MyCustomButton.vue';
 
 export default {
   name: 'TodoItem',
   components: {
-    DeleteButton
+    MyCustomButton
   },
   props: {
     todo: {

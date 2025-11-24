@@ -12,12 +12,11 @@
 </template>
 
 <script>
-import AddButton from './buttons/AddButton.vue'
-
+import MyCustomButton from './buttons/MyCustomButton.vue';
 export default {
   name: 'AddTodoForm',
   components: {
-    AddButton
+    MyCustomButton
   },
   data() {
     return {
