@@ -4,7 +4,6 @@
     <input type="radio" name="answer" value="yes"> Да
     <input type="radio" name="answer" value="no"> Нет
 
-    <input type="text" placeholder="Привет">
     <input type="email" placeholder="Введите почту">
     ...
   </div>
@@ -18,7 +17,7 @@
   <div class="container">
     <div>{{myCat}} {{myDog}}</div>
     <h1>Здравствуй Дедушка Мороз</h1>
-    <AddButton></AddButton>
+    <MyCustomButton></MyCustomButton>
     <p>Здравствуй Дедушка Мороз,борода из ваты.
     Ты подарки нам принес?</p>
     <input type="radio" name="answer" value="yes"> Да

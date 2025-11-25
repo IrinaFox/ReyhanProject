@@ -10,7 +10,7 @@
           placeholder="Введите задачу..."
           class="input"
       />
-      <button @click="addTodo" class="btn-add">Добавить</button>
+      <MyCustomButton @click="addTodo" class="btn-add">Добавить</MyCustomButton>
     </div>
 
     <!-- Список задач -->

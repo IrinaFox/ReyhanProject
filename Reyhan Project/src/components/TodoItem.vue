@@ -7,7 +7,7 @@
       </div>
     </div>
 
-    <DeleteButton @click="$emit('delete', todo.id)" />
+    <MyCustomButton @click="$emit('delete', todo.id)" />
   </div>
 </template>
 

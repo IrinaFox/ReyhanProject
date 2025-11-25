@@ -7,7 +7,7 @@
         @keyup.enter="handleAdd"
         class="todo-input"
     >
-    <AddButton @click="handleAdd" :disabled="!newTodoText.trim()" />
+    <MyCustomButton @click="handleAdd" :disabled="!newTodoText.trim()" />
   </div>
 </template>
 
