@@ -10,7 +10,6 @@
 </template>
 
 <script>
-import { useMainStore } from '@/store/store';
 
 export default {
   name: 'AddButton',

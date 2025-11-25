@@ -7,17 +7,16 @@
         @keyup.enter="handleAdd"
         class="todo-input"
     >
-    <AddButton @click="handleAdd" :disabled="!newTodoText.trim()" />
+    <MyCustomButton @click="handleAdd" :disabled="!newTodoText.trim()" />
   </div>
 </template>
 
 <script>
-import AddButton from './AddButton.vue'
-
+import MyCustomButton from './buttons/MyCustomButton.vue';
 export default {
   name: 'AddTodoForm',
   components: {
-    AddButton
+    MyCustomButton
   },
   data() {
     return {

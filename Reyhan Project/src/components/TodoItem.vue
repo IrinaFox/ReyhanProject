@@ -7,17 +7,17 @@
       </div>
     </div>
 
-    <DeleteButton @click="$emit('delete', todo.id)" />
+    <MyCustomButton @click="$emit('delete', todo.id)" />
   </div>
 </template>
 
 <script>
-import DeleteButton from './DeleteButton.vue'
+import MyCustomButton from './buttons/MyCustomButton.vue';
 
 export default {
   name: 'TodoItem',
   components: {
-    DeleteButton
+    MyCustomButton
   },
   props: {
     todo: {

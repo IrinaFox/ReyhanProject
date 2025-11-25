@@ -1,10 +1,23 @@
 
 <template>
-  <!-- Здесь пишется весь HTML код -->
+  <div>
+    <input type="radio" name="answer" value="yes"> Да
+    <input type="radio" name="answer" value="no"> Нет
+
+    <input type="email" placeholder="Введите почту">
+    ...
+  </div>
+  <div>
+    <!-- Используем MyCustomButton вместо старых кнопок -->
+    <MyCustomButton text="Отправить" color="blue" size="18" />
+    <MyCustomButton text="Да" color="green" size="16" />
+    <MyCustomButton text="Нет" color="red" size="16" />
+    <MyCustomButton text="Купить" color="orange" size="20" />
+  </div>
   <div class="container">
     <div>{{myCat}} {{myDog}}</div>
     <h1>Здравствуй Дедушка Мороз</h1>
-    <AddButton></AddButton>
+    <MyCustomButton></MyCustomButton>
     <p>Здравствуй Дедушка Мороз,борода из ваты.
     Ты подарки нам принес?</p>
     <input type="radio" name="answer" value="yes"> Да
@@ -40,11 +53,11 @@
 </template>
 
 <script>
-import AddButton from "@/components/AddButton.vue";
+import MyCustomButton from './buttons/MyCustomButton.vue';
 
 export default {
   name: "Reyhan",
-  components: {AddButton},
+  components: {MyCustomButton},
   props: {
     text: {
       type: String,
