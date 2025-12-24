@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import CalculatorButton from './CalculatorButton.vue'
 
 const display=ref("0")
 const firstNumber = ref(null)
@@ -51,28 +52,35 @@ function calculate() {
 </script>
 
 <template>
-  <div>
+  <div class="calculator">
     <h2>Калькулятор</h2>
-    <p>{{display}}</p>
-    <button @click="addNumber('0')">0</button>
-    <button @click="addNumber('1')">1</button>
-    <button @click="addNumber('2')">2</button>
-    <button @click="addNumber('3')">3</button>
-    <button @click="addNumber('4')">4</button>
-    <button @click="addNumber('5')">5</button>
-    <button @click="addNumber('6')">6</button>
-    <button @click="addNumber('7')">7</button>
-    <button @click="addNumber('8')">8</button>
-    <button @click="addNumber('9')">9</button>
 
-    <button @click="calculate">=</button>
-    <button @click="clearDisplay">C</button>
+    <div class="display">
+      {{ display }}
+    </div>
 
-    <button @click="setOperator('+')">+</button>
-    <button @click="setOperator('-')">-</button>
-    <button @click="setOperator('*')">×</button>
-    <button @click="setOperator('/')">÷</button>
+    <div class="buttons">
+      <!-- цифры -->
+      <CalculatorButton label="7" @press="addNumber" />
+      <CalculatorButton label="8" @press="addNumber" />
+      <CalculatorButton label="9" @press="addNumber" />
+      <CalculatorButton label="+" @press="setOperator" />
 
+      <CalculatorButton label="4" @press="addNumber" />
+      <CalculatorButton label="5" @press="addNumber" />
+      <CalculatorButton label="6" @press="addNumber" />
+      <CalculatorButton label="-" @press="setOperator" />
+
+      <CalculatorButton label="1" @press="addNumber" />
+      <CalculatorButton label="2" @press="addNumber" />
+      <CalculatorButton label="3" @press="addNumber" />
+      <CalculatorButton label="*" @press="setOperator" />
+
+      <CalculatorButton label="0" @press="addNumber" />
+      <CalculatorButton label="C" @press="clearDisplay" />
+      <CalculatorButton label="=" @press="calculate" />
+      <CalculatorButton label="/" @press="setOperator" />
+    </div>
   </div>
 </template>
 
