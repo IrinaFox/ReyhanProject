@@ -61,9 +61,9 @@ function calculate() {
 
     <div class="buttons">
       <!-- цифры -->
-      <CalculatorButton label="7" @press="addNumber" />
-      <CalculatorButton label="8" @press="addNumber" />
-      <CalculatorButton label="9" @press="addNumber" />
+      <CalculatorButton label="1" @press="addNumber" />
+      <CalculatorButton label="2" @press="addNumber" />
+      <CalculatorButton label="3" @press="addNumber" />
       <CalculatorButton label="+" @press="setOperator" />
 
       <CalculatorButton label="4" @press="addNumber" />
@@ -71,9 +71,9 @@ function calculate() {
       <CalculatorButton label="6" @press="addNumber" />
       <CalculatorButton label="-" @press="setOperator" />
 
-      <CalculatorButton label="1" @press="addNumber" />
-      <CalculatorButton label="2" @press="addNumber" />
-      <CalculatorButton label="3" @press="addNumber" />
+      <CalculatorButton label="7" @press="addNumber" />
+      <CalculatorButton label="8" @press="addNumber" />
+      <CalculatorButton label="9" @press="addNumber" />
       <CalculatorButton label="*" @press="setOperator" />
 
       <CalculatorButton label="0" @press="addNumber" />
@@ -106,48 +106,10 @@ function calculate() {
   overflow-x: auto;
   box-shadow: inset 2px 2px 5px #00000080;
 }
-
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 12px;
-}
-
-button {
-  font-size: 1.5rem;
-  padding: 18px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.15s ease-in-out;
-  box-shadow: 3px 3px 8px #b0b0b0, -3px -3px 8px #ffffff;
-}
-
-/* Цвета кнопок */
-button.number {
-  background: #f1f1f1;
-  color: #333;
-}
-
-button.operator {
-  background: #ff9500;
-  color: #fff;
-}
-
-button.clear {
-  background: #ff3b30;
-  color: #fff;
-}
-
-button.equals {
-  background: #34c759;
-  color: #fff;
-}
-
-/* Эффект нажатия */
-button:active {
-  transform: translateY(2px);
-  box-shadow: inset 2px 2px 5px #aaa, inset -2px -2px 5px #fff;
 }
 
 </style>
