@@ -4,6 +4,8 @@
 
 <template>
   <button class="btn">Нажми меня</button>
+  <div class="red-box">Красный</div>
+  <div class="green-box">Зелёный</div>
 </template>
 
 <style scoped>
@@ -30,5 +32,25 @@
   color: white;
   font-size: 16px;
   cursor: pointer;
+}
+.red-box {
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid black;
+  box-sizing: border-box; /* учитывает padding и border в ширине и высоте */
+  color: white;
+  margin-bottom: 20px;
+}
+
+.green-box {
+  background-color: green;
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid black;
+  box-sizing: content-box;
+  color: white;
 }
 </style>
